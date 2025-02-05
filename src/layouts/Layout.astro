@@ -6,7 +6,7 @@ import { navLinks } from '@/constants/navLinks';
 ---
 
 <!doctype html>
-<html lang="en" class="dark">
+<html lang="en" class="dark scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -17,7 +17,9 @@ import { navLinks } from '@/constants/navLinks';
   <body
     class="bg-neutral-950 antialiased overflow-x-hidden w-screen text-white dark relative"
   >
-    <slot />
+    <div id="content">
+      <slot />
+    </div>
   </body>
 </html>
 

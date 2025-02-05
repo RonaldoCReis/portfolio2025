@@ -1,5 +1,6 @@
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef, use } from 'react';
 import { motion } from 'framer-motion';
+import React from 'react';
 
 interface DecryptedTextProps {
   text: string;
@@ -13,6 +14,7 @@ interface DecryptedTextProps {
   encryptedClassName?: string;
   parentClassName?: string;
   animateOn?: 'view' | 'hover';
+  triggerAnimation?: boolean;
   [key: string]: any;
 }
 
@@ -28,16 +30,23 @@ export default function DecryptedText({
   parentClassName = '',
   encryptedClassName = '',
   animateOn = 'hover',
+  triggerAnimation = false,
   ...props
 }: DecryptedTextProps) {
   const [displayText, setDisplayText] = useState<string>(text);
-  const [isHovering, setIsHovering] = useState<boolean>(false);
+  const [isHovering, setIsHovering] = useState<boolean>(triggerAnimation);
   const [isScrambling, setIsScrambling] = useState<boolean>(false);
   const [revealedIndices, setRevealedIndices] = useState<Set<number>>(
     new Set()
   );
   const [hasAnimated, setHasAnimated] = useState<boolean>(false);
   const containerRef = useRef<HTMLSpanElement>(null);
+
+  useEffect(() => {
+    setIsHovering(triggerAnimation);
+  }, [triggerAnimation]);
+
+  console.log(isHovering);
 
   useEffect(() => {
     let interval: number;
@@ -206,8 +215,8 @@ export default function DecryptedText({
   const hoverProps =
     animateOn === 'hover'
       ? {
-          onMouseEnter: () => setIsHovering(true),
-          onMouseLeave: () => setIsHovering(false),
+          onMouseEnter: () => {},
+          onMouseLeave: () => {},
         }
       : {};
 

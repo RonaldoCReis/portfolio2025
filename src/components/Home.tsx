@@ -45,7 +45,9 @@ const Home = () => {
             </div>
           </div>
 
-          <Cover className="p-1 text-lg cursor-pointer">Know me better</Cover>
+          <a href="#expertise">
+            <Cover className="p-1 text-lg cursor-pointer">Know me better</Cover>
+          </a>
         </Container>
       </div>
     </>
