@@ -5,15 +5,15 @@ import ExpertiseCard from './ui/ExpertiseCard';
 const Expertise = () => {
   return (
     <div
-      className="h-screen flex items-center justify-center relative"
+      className="flex items-center justify-center relative pt-10"
       id="expertise"
     >
-      <div className="h-[95vh] bg-neutral-900 rounded-3xl w-[95%] mx-auto shadow-2xl border border-neutral-800 opacity-90 pt-0 p-8 relative">
+      <div className=" bg-neutral-900 rounded-3xl w-[95%] mx-auto shadow-2xl border border-neutral-800 opacity-90 pt-0 pb-40 px-8  relative">
         <GlowingEffect
           spread={180}
           glow={true}
           disabled={false}
-          proximity={250}
+          proximity={277}
           inactiveZone={0}
           blur={2}
         />

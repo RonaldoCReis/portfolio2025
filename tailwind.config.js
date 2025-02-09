@@ -4,6 +4,13 @@ module.exports = {
   content: ['./src/**/*.{astro,html,js,jsx,ts,tsx}'], // Certifique-se de incluir .astro
   theme: {
     extend: {
+      fontSize: {
+        '6xl': '4rem',
+      },
+      lineHeight: {
+        4: '1.125rem',
+        6: '1.625rem',
+      },
       keyframes: {
         shine: {
           '0%': { 'background-position': '100%' },
