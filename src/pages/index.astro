@@ -2,9 +2,10 @@
 import Expertise from '@/components/Expertise';
 import Home from '../components/Home';
 import Layout from '../layouts/Layout.astro';
-import { FloatingDock } from '@/components/ui/floating-dock';
-import { navLinks } from '@/constants/navLinks';
 import StarBackground from '@/components/ui/StarBackground';
+import Timeline from '@/components/Experience';
+import Contact from '@/components/Contact';
+import Footer from '@/components/Footer';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -14,4 +15,7 @@ import StarBackground from '@/components/ui/StarBackground';
   <StarBackground client:only />
   <Home client:load />
   <Expertise client:load />
+  <Timeline client:load />
+  <Contact client:load />
+  <Footer />
 </Layout>

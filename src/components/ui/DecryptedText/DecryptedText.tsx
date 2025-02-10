@@ -46,8 +46,6 @@ export default function DecryptedText({
     setIsHovering(triggerAnimation);
   }, [triggerAnimation]);
 
-  console.log(isHovering);
-
   useEffect(() => {
     let interval: number;
     let currentIteration = 0;

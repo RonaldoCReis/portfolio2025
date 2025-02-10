@@ -4,7 +4,7 @@ import ExpertiseCard from './ui/ExpertiseCard';
 
 const Expertise = () => {
   return (
-    <div
+    <section
       className="flex items-center justify-center relative pt-10"
       id="expertise"
     >
@@ -76,16 +76,16 @@ const Expertise = () => {
           <span className="mt-4 block text-sm ">
             <span className="opacity-70">Want to know more? </span>
             <a
-              href="https://www.linkedin.com/in/ronaldocreis/"
+              href="https://github.com/RonaldoCReis"
               target="_blank"
               className="text-blue-400 opacity-90"
             >
-              see my linkedin profile
+              see my github profile
             </a>
           </span>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
