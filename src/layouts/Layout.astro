@@ -6,11 +6,36 @@ import '@fontsource-variable/dm-sans';
 <!doctype html>
 <html lang="en" class="dark scroll-smooth">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>Ronaldo Reis</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ronaldo Reis | Software Engineer</title>
+    <meta
+      name="description"
+      content="Ronaldo Reis - Software Engineer. Crafting high-performance digital experiences with modern web technologies."
+    />
+    <meta
+      name="keywords"
+      content="Software Engineer, Frontend Developer, Web Developer, UI/UX, React, JavaScript, TypeScript, Fastify"
+    />
+    <meta name="author" content="Ronaldo Reis" />
+    <meta
+      property="og:title"
+      content="Ronaldo Reis | Software Engineer & Frontend Developer"
+    />
+    <meta
+      property="og:description"
+      content="Building seamless web experiences with modern technologies like React, TypeScript, and Fastify."
+    />
+    <meta property="og:url" content="https://ronaldo-reis.com" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ronaldo Reis | Software Engineer" />
+    <meta
+      name="twitter:description"
+      content="Building seamless web experiences with modern technologies like React, TypeScript, and Fastify."
+    />
   </head>
   <body
     class="bg-neutral-950 antialiased overflow-x-hidden w-screen text-white dark relative"
@@ -18,6 +43,19 @@ import '@fontsource-variable/dm-sans';
     <div id="content">
       <slot />
     </div>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Ronaldo Reis",
+        "jobTitle": "Software Engineer",
+        "url": "https://ronaldo-reis.com",
+        "sameAs": [
+          "https://github.com/ronaldocreis",
+          "https://www.linkedin.com/in/ronaldocreis"
+        ]
+      }
+    </script>
   </body>
 </html>
 
