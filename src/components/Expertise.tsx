@@ -21,7 +21,7 @@ const Expertise = () => {
           <ASCIIText text="expertise" enableWaves={false} asciiFontSize={6} />
         </div>
         <div className="max-w-5xl  mx-auto">
-          <div className="flex gap-10 justify-stretch [&>*]:flex-1 ">
+          <div className="flex gap-10 justify-stretch [&>*]:flex-1 flex-wrap">
             <ExpertiseCard
               title="Front-end Development"
               items={[
@@ -80,7 +80,7 @@ const Expertise = () => {
               target="_blank"
               className="text-blue-400 opacity-90"
             >
-              see my github profile
+              Check out my GitHub
             </a>
           </span>
         </div>
