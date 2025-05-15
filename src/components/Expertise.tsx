@@ -18,7 +18,7 @@ const Expertise = () => {
           blur={2}
         />
         <div className="h-80 relative w-full">
-          <ASCIIText text="expertise" enableWaves={false} asciiFontSize={6} />
+          <ASCIIText text="skills" enableWaves={false} asciiFontSize={6} />
         </div>
         <div className="max-w-5xl  mx-auto">
           <div className="flex gap-10 justify-stretch [&>*]:flex-1 flex-wrap">
