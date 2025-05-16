@@ -26,7 +26,7 @@ const links = [
   },
   {
     icon: IconBrandGithub,
-    text: 'ronaldoreis',
+    text: 'ronaldocreis',
     link: 'https://www.github.com/ronaldocreis',
   },
 ];

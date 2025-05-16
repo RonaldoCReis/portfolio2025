@@ -1,6 +1,6 @@
-import ASCIIText from './ui/ASCIIText/ASCIIText';
 import { GlowingEffect } from './ui/glowing-effect';
 import ExpertiseCard from './ui/ExpertiseCard';
+import FuzzyText from './ui/FuzzyText/FuzzyText';
 
 const Expertise = () => {
   return (
@@ -17,8 +17,10 @@ const Expertise = () => {
           inactiveZone={0}
           blur={2}
         />
-        <div className="h-80 relative w-full">
-          <ASCIIText text="skills" enableWaves={false} asciiFontSize={6} />
+        <div className="h-80 relative w-full flex items-center justify-center">
+          <FuzzyText baseIntensity={0.01} hoverIntensity={0.1} color="#ccc">
+            expertise
+          </FuzzyText>
         </div>
         <div className="max-w-5xl  mx-auto">
           <div className="flex gap-10 justify-stretch [&>*]:flex-1 flex-wrap">
